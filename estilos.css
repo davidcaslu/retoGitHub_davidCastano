@@ -17,9 +17,6 @@
 
 }
 
-.menu--animacionTexto {
-
-}
 
 header{
     background-color: #123CBD;
@@ -254,6 +251,10 @@ footer{
 
 .tarjetas {
     margin: 25px;
+}
+
+.tarjetas:hover {
+    transform:scale(1.01)
 }
 
 .p_tarjetas {
