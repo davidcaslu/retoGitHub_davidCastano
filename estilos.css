@@ -17,9 +17,6 @@
 
 }
 
-.animacionTexto {
-    
-}
 
 header{
     background-color: #123CBD;
@@ -108,9 +105,6 @@ h3 {
 
 }
 
-
-
-
 ul li{
     font-family: 'Inter', sans-serif;
     font-weight:600;
@@ -126,6 +120,12 @@ ul li{
 ul li a{
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #FEA990;
 }
 
 
@@ -141,7 +141,8 @@ main {
 footer{
     grid-area: footer;
     font-family: 'Inter', sans-serif;
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-image: linear-gradient(to bottom, #000, #222);
     width: 100%;
     height: 100px;
     display:flex;
@@ -250,6 +251,11 @@ footer{
 
 .tarjetas {
     margin: 25px;
+    transition: all 1s;
+}
+
+.tarjetas:hover {
+    transform:scale(1.02)
 }
 
 .p_tarjetas {
@@ -352,7 +358,24 @@ footer{
     font-size: 24px;
     border-width: 0;
     border-color: none;
+    animation: crecer 2s ease-in-out infinite;
 }
+
+@keyframes crecer {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.1);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 .formulario_general {
     display: flex;
@@ -457,7 +480,8 @@ section div form div {
 
     .header_navegacion{
         grid-area: navegacion;
-        background-color: #000000;
+        /* background-color: #000000; */
+        background-image: linear-gradient(to right, #000, #444);
         width: 100%;
         color: white;
         display: flex;
