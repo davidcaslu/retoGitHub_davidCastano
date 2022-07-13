@@ -251,10 +251,11 @@ footer{
 
 .tarjetas {
     margin: 25px;
+    transition: all 1s;
 }
 
 .tarjetas:hover {
-    transform:scale(1.01)
+    transform:scale(1.02)
 }
 
 .p_tarjetas {
