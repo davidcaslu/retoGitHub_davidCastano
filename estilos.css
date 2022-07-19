@@ -17,7 +17,6 @@
 
 }
 
-
 header{
     background-color: #123CBD;
     width: 100%;
@@ -252,6 +251,10 @@ footer{
 .tarjetas {
     margin: 25px;
     transition: all 1s;
+}
+
+.tarjetas img{
+    border-radius: 10px;
 }
 
 .tarjetas:hover {
@@ -544,7 +547,7 @@ section div form div {
 
     ul li{
         font-size: 10px;
-        margin: 7px;
+        margin: 7px;}
 
     #plantilla_formulario {
         display: grid;
